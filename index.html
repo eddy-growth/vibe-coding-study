@@ -35,16 +35,16 @@
     --font-display: 'Libre Baskerville', serif;
     --font-body: 'DM Sans', sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
-    --title-size: clamp(1.8rem, 4.5vw, 3.5rem);
-    --h2-size: clamp(1.3rem, 3.2vw, 2.3rem);
-    --h3-size: clamp(1rem, 2.2vw, 1.4rem);
-    --body-size: clamp(0.78rem, 1.3vw, 1rem);
-    --small-size: clamp(0.65rem, 1vw, 0.85rem);
-    --caption-size: clamp(0.6rem, 0.9vw, 0.75rem);
+    --title-size: clamp(1.8rem, 5vw, 5.5rem);
+    --h2-size: clamp(1.3rem, 3.2vw, 3.4rem);
+    --h3-size: clamp(1rem, 1.7vw, 1.9rem);
+    --body-size: clamp(0.85rem, 1.3vw, 1.45rem);
+    --small-size: clamp(0.72rem, 1.05vw, 1.2rem);
+    --caption-size: clamp(0.65rem, 0.85vw, 1rem);
 
-    --slide-padding: clamp(1.2rem, 4vw, 4rem);
-    --content-gap: clamp(0.7rem, 1.8vw, 1.6rem);
-    --element-gap: clamp(0.3rem, 1vw, 0.9rem);
+    --slide-padding: clamp(1.2rem, 4vw, 6rem);
+    --content-gap: clamp(0.7rem, 1.8vw, 2.4rem);
+    --element-gap: clamp(0.3rem, 1vw, 1.3rem);
 
     --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
     --duration-normal: 0.7s;
@@ -151,7 +151,7 @@ body {
     font-size: var(--body-size);
     line-height: 1.55;
     color: var(--body);
-    max-width: 65ch;
+    max-width: 75ch;
 }
 .slide--dark p { color: var(--on-dark-soft); }
 
@@ -224,7 +224,7 @@ body {
 .slide--dark .feature-card { background: var(--surface-dark-elevated); }
 
 .feature-card h3 {
-    font-size: clamp(0.8rem, 1.15vw, 0.95rem);
+    font-size: clamp(0.85rem, 1.25vw, 1.35rem);
     margin-bottom: clamp(0.25rem, 0.5vh, 0.4rem);
 }
 .feature-card p {
@@ -236,7 +236,7 @@ body {
 
 .comparison-table {
     width: 100%;
-    max-width: min(90vw, 900px);
+    max-width: min(90vw, 1300px);
     border-collapse: collapse;
     font-size: var(--small-size);
     margin-top: var(--content-gap);
@@ -261,9 +261,9 @@ body {
 .code-block {
     background: var(--surface-dark);
     border-radius: 8px;
-    padding: clamp(0.7rem, 1.3vw, 1.2rem);
+    padding: clamp(0.7rem, 1.3vw, 1.8rem);
     font-family: var(--font-mono);
-    font-size: clamp(0.65rem, 0.95vw, 0.8rem);
+    font-size: clamp(0.7rem, 1vw, 1.15rem);
     line-height: 1.7;
     color: var(--on-dark);
     overflow: hidden;
@@ -277,11 +277,11 @@ body {
 .quote {
     font-family: var(--font-display);
     font-style: italic;
-    font-size: clamp(1.1rem, 2.2vw, 1.7rem);
+    font-size: clamp(1.1rem, 2.2vw, 2.5rem);
     line-height: 1.4;
     color: var(--ink);
     border-left: 3px solid var(--primary);
-    padding-left: clamp(1rem, 2vw, 2rem);
+    padding-left: clamp(1rem, 2vw, 2.5rem);
     max-width: 50ch;
     margin-top: var(--content-gap);
 }
@@ -292,7 +292,7 @@ body {
     flex-direction: column;
     gap: clamp(0.3rem, 0.5vh, 0.5rem);
     margin-top: var(--content-gap);
-    max-width: min(85vw, 760px);
+    max-width: min(85vw, 1100px);
 }
 .layer {
     display: flex;
